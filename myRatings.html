@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Ratings</title>
+    <link href="style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
     <script id="player-handlebar" type="text/x-handlebars-template">
         {{playerOne}}
@@ -49,8 +50,16 @@
         {{myRatingSeventeen}}
     </script>
 </head>
+<header>My Ratings</header>
 <body>
+    <br>
+    <br>
    <table>
+    <colgroup>
+        <col style="width: 20%">
+        <col style="width: 20%">
+        <col style="width: 60%">
+    </colgroup>
     <tr>
         <th>Player</th>
         <th>Match Rating</th>
@@ -112,7 +121,7 @@
         <td>Worked hard as always but very little service. Needs to hold the ball up better on the rare occasions he sees it. Subbed just after the hour.</td>
     </tr>
     <tr>
-        <td colspan="3">Subs</td>
+        <td id="subs" colspan="3">Subs</td>
     </tr>
     <tr>
         <td class="player-twelve"></td>

@@ -1,4 +1,51 @@
-title {
+header {
     background-color: black;
     color:white;
+    text-align: center;
+    font-size: 60px;
+    height: 100px;
+    width: 100%;
+    padding-top: 1%;
+}
+
+body {
+    background-color: maroon;
+    color:black;
+    line-height: 25px;
+    text-align: center;
+}
+
+table {
+    background-color: white;
+    text-align: center;
+    border: 2px solid;
+    width: 80%;
+    margin: auto;
+    empty-cells: hide;
+}
+
+th, td, tr {
+    border: 1px solid;
+}
+
+th, #subs {
+    background-color: lightgrey;
+}
+
+h3 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+form {
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid;
+}
+
+#submit-button {
+    height: 50px;
+    width: 180px;
+    margin-top: 25px;
 }
