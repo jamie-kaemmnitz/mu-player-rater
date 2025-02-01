@@ -49,3 +49,10 @@ form {
     width: 180px;
     margin-top: 25px;
 }
+
+p {
+    font-size: 18px;
+    color: black;
+    width: 50%;
+    margin: auto;
+}
