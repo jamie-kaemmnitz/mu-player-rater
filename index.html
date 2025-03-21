@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MU player rater</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+    <script id="player-handlebar" type="text/x-handlebars-template">
+        {{playerOne}}
+        {{playerTwo}}
+        {{playerThree}}
+        {{playerFour}}
+        {{playerFive}}
+        {{playerSix}}
+        {{playerSeven}}
+        {{playerEight}}
+        {{playerNine}}
+        {{playerTen}}
+        {{playerEleven}}
+        {{playerTwelve}}
+        {{playerThirteen}}
+        {{playerFourteen}}
+        {{playerFifteen}}
+        {{playerSixteen}}
+        {{playerSeventeen}}
+    </script>
+</head>
+<header>Man Utd Player Rater</header>
+<body>
+    <section id="intro">
+        <h3>Introduction</h3>
+        <P>Welcome to my player rater for Manchester United football games. As a Man Utd fan i try a watch every match (no matter how tough it gets) and thought it would be good to put my reviews on here. Each game i will put my ratings and reviews up for how i saw the match. If you like you can fill in your own ratings for the match and compare with the ratings i gave. </P>
+    </section>
+    <section>
+        <h3>Last Match</h3>
+        <p>Home Team  0:0  Away Team <br> Date time</p>
+        <p>Review</p>
+    </section>
+    <section>
+        <h3>My Ratings</h3>
+        <p>If you would like to view the ratings i have given for the game above please click on the button below. Alternatively you can enter your own player ratings below and compare with my ratings through the Submit button.</p>
+        <br>
+        <p>To view my ratings for the game <a href="myRatings.html">click here</a></p>
+    </section id=>
+    <section>
+        <h3>Rate the Players</h3>
+        <form id="ratings-form">
+            <label for="player-one" class="player-one">{{playerOne}}</label>
+            <select id="playerOne" name="player-one">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br>
+            <label for="player-two" class="player-two">{{playerTwo}}</label>
+            <select id="playerTwo" name="player-two">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br>
+            <label for="player-three" class="player-three">{{playerThree}}</label>
+            <select id="playerThree" name="player-three">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br>
+            <label for="player-four" class="player-four">{{playerFour}}</label>
+            <select id="playerFour" name="player-four">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br>
+            <label for="player-five" class="player-five">{{playerFive}}</label>
+            <select id="playerFive" name="player-five">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br>
+            <label for="player-six" class="player-six">{{playerSix}}</label>
+            <select id="playerSix" name="player-six">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br>
+            <label for="player-seven" class="player-seven">{{playerSeven}}</label>
+            <select id="playerSeven" name="player-seven">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br>
+            <label for="player-eight" class="player-eight">{{playerEight}}</label>
+            <select id="playerEight" name="player-eight">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br>
+            <label for="player-nine" class="player-nine">{{playerNine}}</label>
+            <select id="playerNine" name="player-nine">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br>
+            <label for="player-ten" class="player-ten">{{playerTen}}</label>
+            <select id="playerTen" name="player-ten">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br>
+            <label for="player-eleven" class="player-eleven">{{playerEleven}}</label>
+            <select id="playerEleven" name="player-eleven">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br>
+            <h5>Subs</h5>
+            <br>
+            <div class="subs">
+                <label for="player-twelve" class="player-twelve">{{playerTwelve}}</label>
+                <select id="playerTwelve" name="player-twelve">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <br>
+                <label for="player-thirteen" class="player-thirteen">{{playerThirteen}}</label>
+                <select id="playerThirteen" name="player-thirteen">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <br>
+                <label for="player-fourteen" class="player-fourteen">{{playerFourteen}}</label>
+                <select id="playerFourteen" name="player-fourteen">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <br>
+                <label for="player-fifteen" class="player-fifteen">{{playerFifteen}}</label>
+                <select id="playerFifteen" name="player-fifteen">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <br>
+                <label for="player-sixteen" class="player-sixteen">{{playerSixteen}}</label>
+                <select id="playerSixteen" name="player-sixteen">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <br>
+            </div>
+            <div class="extra-time">
+                <label for="player-seventeen" class="player-seventeen">{{playerSeventeen}}</label>
+                <select id="playerSeventeen" name="player-seventeen">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="submit-button">
+                <input id="submit-button" type="submit" value="submit">
+            </div>
+        </form>
+    </section>
+    <script src="mu.js"></script>
+</body>
+</html>
