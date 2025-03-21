@@ -123,7 +123,7 @@ function getCurrentPage() {
 document.addEventListener("DOMContentLoaded", () => {
     const currentPage = getCurrentPage();
 
-    if (currentPage === "home.html") {
+    if (currentPage === "index.html") {
         const form = document.getElementById("ratings-form");
         if (form) {
             form.addEventListener('submit', function (e) {
