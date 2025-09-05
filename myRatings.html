@@ -5,50 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Ratings</title>
     <link href="style.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
-    <script id="player-handlebar" type="text/x-handlebars-template">
-        {{playerOne}}
-        {{playerTwo}}
-        {{playerThree}}
-        {{playerFour}}
-        {{playerFive}}
-        {{playerSix}}
-        {{playerSeven}}
-        {{playerEight}}
-        {{playerNine}}
-        {{playerTen}}
-        {{playerEleven}}
-        {{playerTwelve}}
-        {{playerThirteen}}
-        {{playerFourteen}}
-        {{playerFifteen}}
-        {{playerSixteen}}
-        {{playerSeventeen}}
-        {{playerEighteen}}
-        {{playerNineteen}}
-        {{playerTwenty}}
-        {{playerTwentyone}}
-        {{playerTwentytwo}}
-    </script>
-    <script id="myrating-handlebar" type="text/x-handlebars-template">
-        {{myRatingOne}}
-        {{myRatingTwo}}
-        {{myRatingThree}}
-        {{myRatingFour}}
-        {{myRatingFive}}
-        {{myRatingSix}}
-        {{myRatingSeven}}
-        {{myRatingEight}}
-        {{myRatingNine}}
-        {{myRatingTen}}
-        {{myRatingEleven}}
-        {{myRatingTwelve}}
-        {{myRatingThirteen}}
-        {{myRatingFourteen}}
-        {{myRatingFifteen}}
-        {{myRatingSixteen}}
-        {{myRatingSeventeen}}
-    </script>
 </head>
 <header>My Ratings</header>
 <body>
@@ -68,57 +24,57 @@
     <tr>
         <td class="player-one"></td>
         <td class="myrating-one"></td>
-        <td>Very little to do, no faults.</td>
+        <td class="p-one-review"></td>
     </tr>
     <tr>
         <td class="player-two"></td>
         <td class="myrating-two"></td>
-        <td>Solid enough, not enough of a threat going forward. subbed off at half time.</td>
+        <td class="p-two-review"></td>
     </tr>
     <tr>
         <td class="player-three"></td>
         <td class="myrating-three"></td>
-        <td>Solid enough, injured just before half time and subbed at the break. Booked.</td>
+        <td class="p-three-review"></td>
     </tr>
     <tr>
         <td class="player-four"></td>
         <td class="myrating-four"></td>
-        <td>Really solid display by the veteran.</td>
+        <td class="p-four-review"></td>
     </tr>
     <tr>
         <td class="player-five"></td>
         <td class="myrating-five"></td>
-        <td>Goal saving block at the end of the game. Did not create much going forward.</td>
+        <td class="p-five-review"></td>
     </tr>
     <tr>
         <td class="player-six"></td>
         <td class="myrating-six"></td>
-        <td>Worked hard in the middle of the pitch without creating much. Replaced with 5 minutes left. Booked.</td>
+        <td class="p-six-review"></td>
     </tr>
     <tr>
         <td class="player-seven"></td>
         <td class="myrating-seven"></td>
-        <td>Tried to create opening for the attacking players but little outcome from it. Booked.</td>
+        <td class="p-seven-review"></td>
     </tr>
     <tr>
         <td class="player-eight"></td>
         <td class="myrating-eight"></td>
-        <td>Great effort from a free kick which hit the cross bar but very little else.</td>
+        <td class="p-eight-review"></td>
     </tr>
     <tr>
         <td class="player-nine"></td>
         <td class="myrating-nine"></td>
-        <td>Always looking to attack down the wings, not much service but did little when he did recieve the ball.</td>
+        <td class="p-nine-review"></td>
     </tr>
     <tr>
         <td class="player-ten"></td>
         <td class="myrating-ten"></td>
-        <td>A couple of good efforts on goal but almost let his team down with two silly challenges in a matter of minutes which could of led to a red card. Rightly subbed after second foul. Booked.</td>
+        <td class="p-ten-review"></td>
     </tr>
     <tr>
         <td class="player-eleven"></td>
         <td class="myrating-eleven"></td>
-        <td>Worked hard as always but very little service. Needs to hold the ball up better on the rare occasions he sees it. Subbed just after the hour.</td>
+        <td class="p-eleven-review"></td>
     </tr>
     <tr>
         <td id="subs" colspan="3">Subs</td>
@@ -126,63 +82,63 @@
     <tr>
         <td class="player-twelve"></td>
         <td class="myrating-twelve"></td>
-        <td>Replaced Maguire at half time. Solid enough next to Evans.</td>
+        <td class="p-twelve-review"></td>
     </tr>
     <tr>
         <td class="player-thirteen"></td>
         <td class="myrating-thirteen"></td>
-        <td>Replaced Mazraoui at half time. Caught out a couple of times on the wing but did well enough for not being in his natural position. Booked.</td>
+        <td class="p-thirteen-review"></td>
     </tr>
     <tr>
         <td class="player-fourteen"></td>
         <td class="myrating-fourteen"></td>
-        <td>Replaced Hojlund after 64 mins. Ineffective, has looked a bit lost the last couple of matches.</td>
+        <td class="p-fourteen-review"></td>
     </tr>
     <tr>
         <td class="player-fifteen"></td>
         <td class="myrating-fifteen"></td>
-        <td>Replaced Rashford after 64 mins. Worked hard without achieving much.</td>
+        <td class="p-fifteen-review"></td>
     </tr>
     <tr>
         <td class="player-sixteen"></td>
         <td class="myrating-sixteen"></td>
-        <td>Replaced Mainoo after 85 mins. Very little time to affect the game.</td>
+        <td class="p-sixteen-review"></td>
     </tr>
     <tr>
         <td class="player-seventeen"></td>
         <td class="myrating-seventeen"></td>
-        <td>Did not play</td>
+        <td class="p-seventeen-review"></td>
     </tr>
     <tr>
         <td class="player-eighteen"></td>
-        <td>N/A</td>
-        <td>Did not play</td>
+        <td class="myrating-eighteen"></td>
+        <td class="p-eighteen-review"></td>
     </tr>
     <tr>
         <td class="player-nineteen"></td>
-        <td>N/A</td>
-        <td>Did not play</td>
+        <td class="myrating-nineteen"></td>
+        <td class="p-nineteen-review"></td>
     </tr>
     <tr>
         <td class="player-twenty"></td>
-        <td>N/A</td>
-        <td>Did not play</td>
+        <td class="myrating-twenty"></td>
+        <td class="p-twenty-review"></td>
     </tr>
    </table>
     <section id="european-games">
     <table>
         <tr>
             <td class="player-twentyone"></td>
-            <td></td>
-            <td></td>
+            <td class="myrating-twentyone"></td>
+            <td class="p-twentyone-review"></td>
         </tr>
         <tr>
             <td class="player-twentytwo"></td>
-            <td></td>
-            <td></td>
+            <td class="myrating-twentytwo"></td>
+            <td class="p-twentytwo-review"></td>
         </tr>
     </table> 
     </section>
-   <script src="mu.js"></script>
+   <script src="data.js"></script>
 </body>
 </html>

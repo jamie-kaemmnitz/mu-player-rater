@@ -1,37 +1,4 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-    const playersSource = document.getElementById('player-handlebar').innerHTML;
-    const playerTemplate = Handlebars.compile(playersSource);
-
-    const playerContext = {
-        playerOne:'Onana',
-        playerTwo:'Mazraoui',
-        playerThree:'Maguire',
-        playerFour:'Evans',
-        playerFive:'Dalot',
-        playerSix:'Mainoo',
-        playerSeven:'Eriksen',
-        playerEight:'Fernandes',
-        playerNine:'Garnacho',
-        playerTen:'Rashford',
-        playerEleven:'Hojlund',
-        playerTwelve:'de Ligt',
-        playerThirteen:'Lindelof',
-        playerFourteen:'Zirkzee',
-        playerFifteen:'Antony',
-        playerSixteen:'Casemiro',
-        playerSeventeen:'Ugarte',
-        playerEighteen:'Amass',
-        playerNineteen:'Collyer',
-        playerTwenty:'Martinez',
-        playerTwentyone:'',
-        playerTwentytwo:'',
-    };
-
-    const renderedPlayers = playerTemplate(playerContext).trim().split(/\s+/);
-
-    localStorage.setItem('playerData', JSON.stringify(playerContext));
-});
 
 document.addEventListener("DOMContentLoaded", () => {
     const playerData = JSON.parse(localStorage.getItem('playerData'));
@@ -63,34 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const myRatingsSource = document.getElementById('myrating-handlebar').innerHTML;
-    const myRatingTemplate = Handlebars.compile(myRatingsSource);
 
-    const myRatingContext = {
-        myRatingOne: 5,
-        myRatingTwo: 6,
-        myRatingThree: 5,
-        myRatingFour: 7,
-        myRatingFive: 6,
-        myRatingSix: 4,
-        myRatingSeven: 8,
-        myRatingEight: 9,
-        myRatingNine: 8,
-        myRatingTen: 3,
-        myRatingEleven: 8,
-        myRatingTwelve: 5,
-        myRatingThirteen: 6,
-        myRatingFourteen: 7,
-        myRatingFifteen: 5,
-        myRatingSixteen: '',
-        myRatingSeventeen: '',
-    };
-
-    const renderedMyRatings = myRatingTemplate(myRatingContext).trim().split(/\s+/);
-
-    localStorage.setItem('myRatingData', JSON.stringify(myRatingContext));
-});
 
 document.addEventListener("DOMContentLoaded", () => {
     const myRatingData = JSON.parse(localStorage.getItem('myRatingData'));

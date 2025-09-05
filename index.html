@@ -5,26 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MU player rater</title>
     <link href="style.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
-    <script id="player-handlebar" type="text/x-handlebars-template">
-        {{playerOne}}
-        {{playerTwo}}
-        {{playerThree}}
-        {{playerFour}}
-        {{playerFive}}
-        {{playerSix}}
-        {{playerSeven}}
-        {{playerEight}}
-        {{playerNine}}
-        {{playerTen}}
-        {{playerEleven}}
-        {{playerTwelve}}
-        {{playerThirteen}}
-        {{playerFourteen}}
-        {{playerFifteen}}
-        {{playerSixteen}}
-        {{playerSeventeen}}
-    </script>
 </head>
 <header>Man Utd Player Rater</header>
 <body>
@@ -34,8 +14,14 @@
     </section>
     <section>
         <h3>Last Match</h3>
-        <p>Home Team  0:0  Away Team <br> Date time</p>
-        <p>Review</p>
+        <p>
+            <span class="home-team"></span>
+            <span class="home-score"></span> : <span class="away-score"></span>
+            <span class="away-team"></span>
+            <br>
+            <span class="match-date"></span> <span class="match-time"></span>
+        </p>
+        <p class="match-review"></p>
     </section>
     <section>
         <h3>My Ratings</h3>
@@ -46,7 +32,7 @@
     <section>
         <h3>Rate the Players</h3>
         <form id="ratings-form">
-            <label for="player-one" class="player-one">{{playerOne}}</label>
+            <label for="player-one" class="player-one"></label>
             <select id="playerOne" name="player-one">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -60,7 +46,7 @@
                 <option value="10">10</option>
             </select>
             <br>
-            <label for="player-two" class="player-two">{{playerTwo}}</label>
+            <label for="player-two" class="player-two"></label>
             <select id="playerTwo" name="player-two">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -74,7 +60,7 @@
                 <option value="10">10</option>
             </select>
             <br>
-            <label for="player-three" class="player-three">{{playerThree}}</label>
+            <label for="player-three" class="player-three"></label>
             <select id="playerThree" name="player-three">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -88,7 +74,7 @@
                 <option value="10">10</option>
             </select>
             <br>
-            <label for="player-four" class="player-four">{{playerFour}}</label>
+            <label for="player-four" class="player-four"></label>
             <select id="playerFour" name="player-four">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -102,7 +88,7 @@
                 <option value="10">10</option>
             </select>
             <br>
-            <label for="player-five" class="player-five">{{playerFive}}</label>
+            <label for="player-five" class="player-five"></label>
             <select id="playerFive" name="player-five">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -116,7 +102,7 @@
                 <option value="10">10</option>
             </select>
             <br>
-            <label for="player-six" class="player-six">{{playerSix}}</label>
+            <label for="player-six" class="player-six"></label>
             <select id="playerSix" name="player-six">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -130,7 +116,7 @@
                 <option value="10">10</option>
             </select>
             <br>
-            <label for="player-seven" class="player-seven">{{playerSeven}}</label>
+            <label for="player-seven" class="player-seven"></label>
             <select id="playerSeven" name="player-seven">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -144,7 +130,7 @@
                 <option value="10">10</option>
             </select>
             <br>
-            <label for="player-eight" class="player-eight">{{playerEight}}</label>
+            <label for="player-eight" class="player-eight"></label>
             <select id="playerEight" name="player-eight">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -158,7 +144,7 @@
                 <option value="10">10</option>
             </select>
             <br>
-            <label for="player-nine" class="player-nine">{{playerNine}}</label>
+            <label for="player-nine" class="player-nine"></label>
             <select id="playerNine" name="player-nine">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -172,7 +158,7 @@
                 <option value="10">10</option>
             </select>
             <br>
-            <label for="player-ten" class="player-ten">{{playerTen}}</label>
+            <label for="player-ten" class="player-ten"></label>
             <select id="playerTen" name="player-ten">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -186,7 +172,7 @@
                 <option value="10">10</option>
             </select>
             <br>
-            <label for="player-eleven" class="player-eleven">{{playerEleven}}</label>
+            <label for="player-eleven" class="player-eleven"></label>
             <select id="playerEleven" name="player-eleven">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -203,7 +189,7 @@
             <h5>Subs</h5>
             <br>
             <div class="subs">
-                <label for="player-twelve" class="player-twelve">{{playerTwelve}}</label>
+                <label for="player-twelve" class="player-twelve"></label>
                 <select id="playerTwelve" name="player-twelve">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -217,7 +203,7 @@
                     <option value="10">10</option>
                 </select>
                 <br>
-                <label for="player-thirteen" class="player-thirteen">{{playerThirteen}}</label>
+                <label for="player-thirteen" class="player-thirteen"></label>
                 <select id="playerThirteen" name="player-thirteen">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -231,7 +217,7 @@
                     <option value="10">10</option>
                 </select>
                 <br>
-                <label for="player-fourteen" class="player-fourteen">{{playerFourteen}}</label>
+                <label for="player-fourteen" class="player-fourteen"></label>
                 <select id="playerFourteen" name="player-fourteen">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -245,7 +231,7 @@
                     <option value="10">10</option>
                 </select>
                 <br>
-                <label for="player-fifteen" class="player-fifteen">{{playerFifteen}}</label>
+                <label for="player-fifteen" class="player-fifteen"></label>
                 <select id="playerFifteen" name="player-fifteen">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -259,7 +245,7 @@
                     <option value="10">10</option>
                 </select>
                 <br>
-                <label for="player-sixteen" class="player-sixteen">{{playerSixteen}}</label>
+                <label for="player-sixteen" class="player-sixteen"></label>
                 <select id="playerSixteen" name="player-sixteen">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -275,7 +261,7 @@
                 <br>
             </div>
             <div class="extra-time">
-                <label for="player-seventeen" class="player-seventeen">{{playerSeventeen}}</label>
+                <label for="player-seventeen" class="player-seventeen"></label>
                 <select id="playerSeventeen" name="player-seventeen">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -294,6 +280,6 @@
             </div>
         </form>
     </section>
-    <script src="mu.js"></script>
+    <script src="data.js"></script>
 </body>
 </html>
