@@ -56,3 +56,10 @@ p {
     width: 50%;
     margin: auto;
 }
+
+label:empty,
+label:empty + select,
+label:empty + select + br,
+label:empty + br {
+  display: none;
+}

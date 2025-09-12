@@ -13,7 +13,16 @@ function findDifference () {
         const myRatingNumber = Number(myRatingText[index].textContent.trim());
 
         if (!isNaN(yourRatingNumber) && !isNaN(myRatingNumber)) {
-            difference[index].textContent = yourRatingNumber - myRatingNumber;
+            diffValue = yourRatingNumber - myRatingNumber;
+            difference[index].textContent = diffValue;
+            
+                if (diffValue > 0) {
+                    difference[index].style.color = "green";
+                } else if (diffValue < 0) {
+                    difference[index].style.color = "red";
+                } else {
+                    difference[index].style.color = "black";
+                }
         } else {
             difference[index].textContent = "N/A";
         }

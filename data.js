@@ -19,10 +19,10 @@ function populatePlayerNames() {
     setText(".player-ten", 'Cunha');
     setText(".player-eleven", 'Sesko');
     setText(".player-twelve", 'Mbuemo');
-    setText(".player-thirteen", 'Fernandes');
-    setText(".player-fourteen", 'De Ligt');
-    setText(".player-fifteen", 'Mount');
-    setText(".player-sixteen", 'Zirkzee');
+    setText(".player-thirteen", 'Fernandes'); 
+    setText(".player-fourteen", 'De Ligt');  
+    setText(".player-fifteen", 'Mount'); 
+    setText(".player-sixteen", 'Zirkzee'); 
     setText(".player-seventeen", 'Leon');
     setText(".player-eighteen", 'Casemiro');
     setText(".player-nineteen", 'Heaton');
@@ -91,11 +91,19 @@ function populatePlayerReviews() {
     setText(".p-twentytwo-review", '');
 };
 
+function extraTime() {
+    const extraTimeRow = document.querySelectorAll(".extra-time");
+    extraTimeRow.forEach(row => {
+        row.style.display = "none";
+    });
+};
+
 document.addEventListener("DOMContentLoaded", function() {
     populatePlayerNames();
     populateLastMatch();
     populateMyRatings();
     populatePlayerReviews();
+    extraTime();
 });
 
 
