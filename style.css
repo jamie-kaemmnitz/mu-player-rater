@@ -165,6 +165,16 @@ select {
     border-radius: 8px;
 }
 
+
+.anchor-buttons {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    color: rgb(218, 26, 26);
+    background-color: rgba(208, 178, 5, 0.922);
+    border-radius: 8px;
+    padding: 10px;
+}
+
 p {
     font-size: 18px;
     color: black;
