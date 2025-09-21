@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 localStorage.setItem("yourRatings", JSON.stringify(formRatings));
 
-                window.location.href = 'yourRatings.html';
+                window.location.href = 'html/yourRatings.html';
             });
         }
     } else if (currentPage === "yourRatings.html") {

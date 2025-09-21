@@ -38,7 +38,7 @@ body {
     align-items: center;
     width: 12%;
     background-color: rgb(218, 26, 26);
-    background-image: url("mu-badge.jpg");
+    background-image: url("../images/mu-badge.jpg");
     background-repeat: repeat-y;
     background-position: center top;
     background-size: auto;
@@ -68,7 +68,7 @@ section {
     align-items: center;
     width: 12%;
     background-color: rgb(218, 26, 26);
-    background-image: url("mu-badge.jpg");
+    background-image: url("../images/mu-badge.jpg");
     background-repeat: repeat-y;
     background-position: center top;
     background-size: auto;
