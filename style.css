@@ -178,7 +178,7 @@ select {
 p {
     font-size: 18px;
     color: black;
-    width: 50%;
+    width: 65%;
     margin: auto;
 }
 
@@ -189,3 +189,71 @@ label:empty + br {
   display: none;
 }
 
+@media (max-width: 767px) {
+
+    header {
+        font-size: 40px;
+        height: 80px;
+        padding-top: 5%;
+    }
+
+    h3 {
+        font-size: 30px;
+        padding: 0 0 15px 0;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    #left, #right {
+        display: none;
+    }
+
+    #main {
+        width: 90%;
+    }
+
+    p {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    form {
+        width: 90%;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #ratings-form {
+        width: 90%;
+        gap: 20px;
+    }
+
+    #submit-button {
+        width: 140px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    select {
+        width: 50px;
+        height: 25px;
+        font-size: 14px;
+    }
+
+    .table-left, .table-right {
+        display: none;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .anchor-buttons {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+}
